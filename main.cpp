@@ -175,7 +175,7 @@ public:
         bool is_wrong_key = true;
         while (is_wrong_key) {
             int hit;
-            std::cout << "Ââåäèòå êëàâèøó (1-8): ";
+            std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ»Ð°Ð²Ð¸ÑˆÑƒ (1-8): ";
             std::cin >> hit;
             switch (hit) {
             case 1: //W
@@ -221,7 +221,7 @@ public:
                 prey.setX2(prey.getX2() - 1);
                 break;
             default:
-                std::cout << "Íåâåðíî íàæàòàÿ êëàâèøà." << std::endl;
+                std::cout << "ÐÐµÐ²ÐµÑ€Ð½Ð¾ Ð½Ð°Ð¶Ð°Ñ‚Ð°Ñ ÐºÐ»Ð°Ð²Ð¸ÑˆÐ°." << std::endl;
                 break;
             }
 
@@ -230,7 +230,7 @@ public:
 
     void playerPredActing() {
         bool are_wrong_steps = true;
-        std::cout << "Âûáåðèòå êîë-âî õîäîâ: 1, 2, 3: ";
+        std::cout << "Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ ÐºÐ¾Ð»-Ð²Ð¾ Ñ…Ð¾Ð´Ð¾Ð²: 1, 2, 3: ";
         int steps;
         std::cin >> steps;
         while (are_wrong_steps) {
@@ -245,8 +245,8 @@ public:
                 are_wrong_steps = false;
                 break;
             default:
-                std::cout << "Íåâåðíî íàæàòàÿ êëàâèøà." << std::endl;
-                std::cout << "Âûáåðèòå êîë-âî õîäîâ: 1, 2, 3: ";
+                std::cout << "ÐÐµÐ²ÐµÑ€Ð½Ð¾ Ð½Ð°Ð¶Ð°Ñ‚Ð°Ñ ÐºÐ»Ð°Ð²Ð¸ÑˆÐ°." << std::endl;
+                std::cout << "Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ ÐºÐ¾Ð»-Ð²Ð¾ Ñ…Ð¾Ð´Ð¾Ð²: 1, 2, 3: ";
                 std::cin >> steps;
                 break;
             }
@@ -254,7 +254,7 @@ public:
         bool is_wrong_key = true;
         while (is_wrong_key) {
             int hit;
-            std::cout << "Ââåäèòå êëàâèøó (1-4): ";
+            std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ»Ð°Ð²Ð¸ÑˆÑƒ (1-4): ";
             std::cin >> hit;
             switch (hit) {
             case 1: //W
@@ -276,7 +276,7 @@ public:
                 pred.setX2(pred.getX2() + (1 * steps));
                 break;
             default:
-                std::cout << "Íåâåðíî íàæàòàÿ êëàâèøà." << std::endl;
+                std::cout << "ÐÐµÐ²ÐµÑ€Ð½Ð¾ Ð½Ð°Ð¶Ð°Ñ‚Ð°Ñ ÐºÐ»Ð°Ð²Ð¸ÑˆÐ°." << std::endl;
                 break;
             }
         }
@@ -293,12 +293,12 @@ int main()
     Sleep(1000);
     system("cls");
 
-    std::cout << "Êëàâèøè óïðàâëåíèÿ: 1,2,3,4,5,6,7,8.\n";
-    std::cout << "** - æåðòâà, () - õèùíèê.\n";
+    std::cout << "ÐšÐ»Ð°Ð²Ð¸ÑˆÐ¸ ÑƒÐ¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ñ: 1,2,3,4,5,6,7,8.\n";
+    std::cout << "** - Ð¶ÐµÑ€Ñ‚Ð²Ð°, () - Ñ…Ð¸Ñ‰Ð½Ð¸Ðº.\n";
 
-    std::cout << "Çà êîãî âû õîòèòå èãðàòü?\n1 - õèùíèê, 2 - æåðòâà\n";
-    std::cout << "0 - ÂÛÕÎÄ.\n";
-    std::cout << "Âàø âûáîð : ";
+    std::cout << "Ð—Ð° ÐºÐ¾Ð³Ð¾ Ð²Ñ‹ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ Ð¸Ð³Ñ€Ð°Ñ‚ÑŒ?\n1 - Ñ…Ð¸Ñ‰Ð½Ð¸Ðº, 2 - Ð¶ÐµÑ€Ñ‚Ð²Ð°\n";
+    std::cout << "0 - Ð’Ð«Ð¥ÐžÐ”.\n";
+    std::cout << "Ð’Ð°Ñˆ Ð²Ñ‹Ð±Ð¾Ñ€ : ";
     int choice;
     std::cin >> choice;
     switch (choice) {
@@ -310,7 +310,7 @@ int main()
         int steps = 30;
         while (true) {
             system("cls");
-            std::cout << "Îñòàëîñü øàãîâ: " << steps << std::endl;
+            std::cout << "ÐžÑÑ‚Ð°Ð»Ð¾ÑÑŒ ÑˆÐ°Ð³Ð¾Ð²: " << steps << std::endl;
 
             ar.arenaShow();
 
@@ -326,7 +326,7 @@ int main()
                 break;
             }
 
-            std::cout << "ÕÎÄÈÒÅ!\n";
+            std::cout << "Ð¥ÐžÐ”Ð˜Ð¢Ð•!\n";
             ddd.playerPredActing();
             system("cls");
             ar.arenaShow();
@@ -351,7 +351,7 @@ int main()
         while (true) {
             system("cls");
 
-            std::cout << "Îñòàëîñü øàãîâ: " << steps << std::endl;
+            std::cout << "ÐžÑÑ‚Ð°Ð»Ð¾ÑÑŒ ÑˆÐ°Ð³Ð¾Ð²: " << steps << std::endl;
             ar.arenaShow();
 
             if (ar.ifGameisOver()) {
@@ -366,7 +366,7 @@ int main()
                 break;
             }
 
-            std::cout << "ÕÎÄÈÒÅ!\n";
+            std::cout << "Ð¥ÐžÐ”Ð˜Ð¢Ð•!\n";
             ddd.playerPreyActing();
             pr.npcActing();
             steps--;
@@ -380,9 +380,8 @@ int main()
         break;
     default:
         system("cls");
-        std::cout << "Íåêîððåêòíûé âûáîð...\n";
+        std::cout << "ÐÐµÐºÐ¾Ñ€Ñ€ÐµÐºÑ‚Ð½Ñ‹Ð¹ Ð²Ñ‹Ð±Ð¾Ñ€...\n";
         break;
     }
     return 0;
 }
-
